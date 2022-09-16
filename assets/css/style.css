@@ -128,6 +128,55 @@ h3 { font-size: var(--fs-h3); }
     margin-bottom: 1em;
 }
 
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* menu page */
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--clr-accent);
+}
+
 /* intro section */
 
 .intro {
@@ -277,7 +326,12 @@ h3 { font-size: var(--fs-h3); }
     display: grid;
     /* repeat(x, 1fr) where x = number of columns, as add more
        of my work extend to 3 or 4 columns, or autofit with minmax(300px, 1 fr) */
-    grid-template-columns: repeat(3, 1fr);    
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: autofit(minmax(300px, 1 fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    padding: 0 4em;
+
+
 }
 
 .portfolio__item {
@@ -304,3 +358,44 @@ h3 { font-size: var(--fs-h3); }
 
 /* footer */
 
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.footer a { 
+    color: inherit;
+    text-decoration: none;
+ }
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: 0.7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 0.5em;
+}
+
+.social-list__link {
+    padding: 0.5em;
+}
