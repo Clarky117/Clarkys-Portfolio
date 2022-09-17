@@ -16,9 +16,12 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
+    /* play with colour scheme */
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #66b3ba;
+    /* --clr-accent: #adb9e3; */
+    /* --clr-accent: #16e0bd; */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
