@@ -1,3 +1,5 @@
 # Clarky's Portfolio
 
-Hey everyone, this is the repo to my portfolio site! If you wish to get in contact you can email me [here](clarky117@outlook.com).
+New updated Portfolio built with React available [here](https://clarkys-react-portfolio-app.herokuapp.com/).
+
+You can get in contact with me via [email](clarky117@outlook.com).
